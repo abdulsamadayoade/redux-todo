@@ -1,0 +1,19 @@
+.header {
+	padding: 1.5rem 0;
+	background: var(--dark);
+	color: var(--text-color);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.header .header__title {
+	font-size: 2.3rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.header .header__title {
+		font-size: 2rem;
+	}
+}

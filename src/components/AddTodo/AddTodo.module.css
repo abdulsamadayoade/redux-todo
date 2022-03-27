@@ -1,0 +1,13 @@
+section {
+	margin-bottom: 3rem;
+}
+
+.reminder__label {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.reminder__label label {
+	margin-left: 1rem;
+}
