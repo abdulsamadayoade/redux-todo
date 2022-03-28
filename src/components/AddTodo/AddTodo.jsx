@@ -28,8 +28,9 @@ const AddTodo = () => {
       // Dispatch the new todo to the store
       dispatch(addTodo(newTodo))
 
-      // Clear the input after submission
-      setTodoText("")
+      // Clear the input and reminder after submission
+      setTodoText("");
+      setReminder(false);
     }
 
     const getTodoText = (text) => {
@@ -44,7 +45,7 @@ const AddTodo = () => {
 			    <Button text="Add Todo" type="submit" />
         </div>
         <div className={classes.reminder__label}>
-          <input id="reminder" type="checkbox" name="reminder" onChange={() => setReminder(!reminder)} />
+          <input id="reminder" type="checkbox" checked={reminder} onChange={() => setReminder(!reminder)} />
           <label htmlFor="reminder">Set reminder for this todo</label>
         </div>
       </form>
