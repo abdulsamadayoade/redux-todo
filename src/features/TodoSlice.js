@@ -14,8 +14,15 @@ export const todoSlice = createSlice({
 		deleteTodo: (state, action) => {
 			state.todos = state.todos.filter((todo) => todo.id !== action.payload);
 		},
+		toggleReminder: (state, action) => {
+			state.todos = state.todos.map((todo) =>
+				todo.id === action.payload
+					? { ...todo, reminder: !todo.reminder }
+					: todo
+			);
+		},
 	},
 });
 
-export const { addTodo, deleteTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo, toggleReminder } = todoSlice.actions;
 export default todoSlice.reducer;
