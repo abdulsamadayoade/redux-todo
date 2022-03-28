@@ -1,15 +1,10 @@
 import Header from "./components/Header/Header";
 import AddTodo from "./components/AddTodo/AddTodo";
 import Todos from "./components/Todos/Todos";
+import { useSelector } from "react-redux";
 
 function App() {
-	const todos = [
-		{
-			id: 1,
-			title: "Wash the dishes",
-			reminder: true,
-		},
-	];
+	const todos = useSelector((state) => state.todos.todos);
 	return (
 		<main>
 			<Header title="Todo App" />
