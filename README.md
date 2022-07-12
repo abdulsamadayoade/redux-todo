@@ -16,7 +16,7 @@ Users can:
 
 ## Live demo link
 
-[Redux Todo](https://redux-todo-app-2022.netlify.app)
+[Redux Todo](https://redux-todo-seven.vercel.app/)
 
 ## How to use this app locally?
 
